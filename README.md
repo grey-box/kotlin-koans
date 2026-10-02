@@ -1,13 +1,21 @@
 # grey-box/kotlin-koans
 
 Kotlin Koans are a series of exercises to get you familiar with the Kotlin
-syntax. Each exercise is a failing unit test, and your job is to make it pass.
+syntax. Each exercise is a failing unit test (or a compile error), and your
+job is to make it pass.
 
 This is the **ASU2026F intern team's fork** of
 [Kotlin/kotlin-koans-edu](https://github.com/Kotlin/kotlin-koans-edu) —
 modernized build tooling (Gradle 8.10.2, Kotlin 1.9.25), verified on JDK 17
 and 21. Work through the koans here instead of the EduTools plugin or the
 online player.
+
+**Branches:**
+
+- `master` — all 43 tasks unsolved (each answer replaced with `TODO()`,
+  matching what the EduTools plugin serves). Start here.
+- `solutions` — the completed tasks. Check your work against this **after**
+  solving each task, not before.
 
 ## How we use this repo
 
