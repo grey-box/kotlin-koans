@@ -11,4 +11,4 @@ fun Shop.getNumberOfTimesProductWasOrdered(product: Product): Int {
 }
 
 fun Customer.getOrderedProducts(): List<Product> =
-        /* TODO */
+        TODO()

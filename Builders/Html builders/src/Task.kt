@@ -1,7 +1,7 @@
 fun renderProductTable(): String {
     return html {
         table {
-            tr/* TODO */ {
+            tr(color = TODO()) {
                 td {
                     text("Product")
                 }
