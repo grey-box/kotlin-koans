@@ -1,5 +1,6 @@
 // Return the set of products that were ordered by all customers
-fun Shop.getProductsOrderedByAll(): Set<Product> =TODO()
+fun Shop.getProductsOrderedByAll(): Set<Product> =
+    customers.map { it.getOrderedProducts() }.reduce { all, products -> all intersect products }
 
 fun Customer.getOrderedProducts(): Set<Product> =
-    TODO()
+    orders.flatMap { it.products }.toSet()
