@@ -3,8 +3,8 @@ import java.util.Random as JRandom
 
 fun useDifferentRandomClasses(): String {
     return "Kotlin random: " +
-            KRandom.nextInt(2).toString() +
+            KRandom.nextInt(2) +
             " Java random:" +
-            JRandom().nextInt(2).toString() +
+            JRandom().nextInt(2) +
             "."
 }

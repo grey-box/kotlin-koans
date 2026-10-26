@@ -1,12 +1,11 @@
 class LazyProperty(val initializer: () -> Int) {
-    private var initialized = false
-    private var value = 0
+    private var cached: Int? = null
+
     val lazy: Int
         get() {
-            if (!initialized) {
-                value = initializer()
-                initialized = true
+            if (cached == null) {
+                cached = initializer()
             }
-            return value
+            return cached!!
         }
 }
