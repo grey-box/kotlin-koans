@@ -4,5 +4,5 @@ fun doSomethingWithCollection(collection: Collection<String>): Collection<String
 
     val maximumSizeOfGroup = groupsByLength.values.map { group -> group.size }.maxOrNull()
 
-    return groupsByLength.values.firstOrNull { group -> group.size==maximumSizeOfGroup }
+    return groupsByLength.values.firstOrNull { group -> group.size == maximumSizeOfGroup }
 }
